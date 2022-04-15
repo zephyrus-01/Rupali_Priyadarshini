@@ -170,7 +170,7 @@ h1 span {
     }
 
     100% {
-        margin-left: 200px;
+        margin-left: 180px;
     }
 }
 @keyframes ship {
@@ -179,7 +179,7 @@ h1 span {
     }
 
     100% {
-        margin-left: 670px;
+        margin-left: 690px;
     }
 }
 @keyframes top_move{
