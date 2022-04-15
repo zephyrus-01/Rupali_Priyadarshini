@@ -8,6 +8,11 @@
     src: url(fonts/SanMarinoBeach-2OOLW.ttf);
 }
 
+@font-face {
+    font-family: font3;
+    src: url(fonts/Algerian Regular.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
