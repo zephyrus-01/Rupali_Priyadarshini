@@ -11,7 +11,7 @@ function disable(){
 
 
 function animation(){
-    document.getElementById("container").innerHTML +="<h1 class=\"animation\">&nbsp &nbsp &nbsp P R A G Y A N &nbsp &nbsp &nbsp P A R A M I T A &nbsp &nbsp &nbsp N A Y A K</h1>";
+    document.getElementById("container").innerHTML +="<h1 class=\"animation\">&nbsp &nbsp &nbsp R U P A L I &nbsp &nbsp &nbsp P R I Y A D A R S H I N I &nbsp &nbsp</h1>";
     var spanText = function spanText(text) {
         var string = text.innerText;
         var spaned = '';
@@ -30,7 +30,7 @@ function animation(){
       animations.forEach(animation => {
         let letters = animation.querySelectorAll('span');
         letters.forEach((letter, i) => {
-          letter.style.animationDelay = (i * 0.15) + 's';
+          letter.style.animationDelay = (i * 0.20) + 's';
         })
       })
 }
