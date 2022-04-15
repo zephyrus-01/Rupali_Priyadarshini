@@ -136,7 +136,7 @@ h1 span {
     z-index: 100;
     position: absolute;
     font-family: font3, Helvetica, Arial, sans-serif;
-    font-size: 220px;
+    font-size: 200px;
     margin-top: -160px;
     transition: 1s;
     animation: color_f 5s linear infinite;
@@ -148,7 +148,7 @@ h1 span {
 .fri {
     position: absolute;
     margin-top: 700px;
-    margin-left: 400px;
+    margin-left: 350px;
     animation: top_move 5s ease-in-out forwards;
 }
 @keyframes color_f {
