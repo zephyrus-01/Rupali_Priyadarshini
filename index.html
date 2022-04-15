@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="star.css">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Amatic SC', cursive;
+            background-color: #3359c4;
+            /* height: 100%; */
+            background: linear-gradient(bottom, #855988, #6B4984, #483475, #2B2F77, #141852, #070B34);
+            background: -moz-linear-gradient(bottom, #855988, #6B4984, #483475, #2B2F77, #141852, #070B34);
+            background: -webkit-linear-gradient(bottom, #855988, #6B4984, #483475, #2B2F77, #141852, #070B34);
+            background: -o-linear-gradient(bottom, #855988, #6B4984, #483475, #2B2F77, #141852, #070B34);
+            color: #cccccc;
+        }
+
+
+        @media (max-width: 1118px) {}
+
+        @media (max-width: 1118px) {}
+
+        @media (max-width: 860PX) {
+            body {
+                /* width: 400px; */
+                transform: rotate(90deg) scale(0.42);
+                background: -webkit-linear-gradient(left, #855988, #6B4984, #483475, #2B2F77, #141852, #070B34);
+                margin-top: -230px !important;
+                margin-left: -50px !important;
+                overflow: hidden;
+            }
+
+            .container,
+            .animation {
+                margin-top: -10px;
+                width: 1600px;
+            }
+        }
+    </style>
+</head>
+
+<body onload="firstclose();animation();disable()">
+    <div class="all">
+        <!-- Start of First Page firstclose(); -->
+        <div class="container" id="container"></div>
+        <div id="moon"></div>
+        <div id="stars-00"></div>
+        <div id="stars-01"></div>
+        <div id="stars-02"></div>
+        <!-- End of First Page -->
+
+        <!-- Start of Second Page -->
+        <div class="secondpage" id="secondpage">
+        </div>
+
+        <!-- End of Second Page -->
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        function firstclose() {
+            setTimeout(function () {
+                document.getElementById("container").remove();
+                document.getElementById("moon").remove();
+                document.getElementById("stars-00").remove();
+                document.getElementById("stars-01").remove();
+                document.getElementById("stars-02").remove();
+                firstpage();
+            }, 18000);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+@font-face {
+    font-family: font1;
+    src: url(fonts/Trashfort-vmAX7.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(fonts/SanMarinoBeach-2OOLW.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+}
+
+.animation {
+    width: 1550px;
+    margin-top: 300px;
+}
+
+h1 {
+    z-index: 100;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: font2, Helvetica, Arial, sans-serif;
+    font-size: 85px;
+    letter-spacing: 1px;
+    color: rgb(199, 196, 196);
+}
+
+h1 span {
+    display: inline-block;
+    animation: slideLeft 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+#moon {
+    background-image: url("https://cdr2.com/moon.png");
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 65;
+    animation: 120s linear 0s infinite drift;
+    bottom: 20vw;
+    left: 10%;
+    filter: drop-shadow(0px 0px 80px #fff9);
+}
+
+@keyframes drift {
+    0% {
+        transform: translatex(0px) translatey(0px);
+    }
+
+    100% {
+        transform: translatex(500px) translatey(-1000px);
+    }
+}
+
+
+
+
+/* .images{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 20%;
+} */
+.friendship {
+    /* color: aliceblue; */
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    position: absolute;
+    font-family: font1;
+    font-size: 150px;
+    margin-top: -360px;
+    transition: 1s;
+}
+
+.friend {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: -650px;
+    animation: friend 5s ease-in-out forwards;
+}
+.ship {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 1600px;
+    animation: ship 5s ease-in-out forwards;
+}
+
+.name_1 {
+    /* color: aliceblue; */
+    color: rgb(255, 0, 0);
+    z-index: 100;
+    position: absolute;
+    font-size: 220px;
+    margin-top: -160px;
+    transition: 1s;
+    animation: color_f 5s linear infinite;
+}
+.rectangle{
+    position: absolute;
+    animation : rect 8s linear infinite;
+}
+.fri {
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 600px;
+    animation: top_move 5s ease-in-out forwards;
+}
+@keyframes color_f {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    25%{
+        color: rgb(238, 255, 0);
+    }
+    50%{
+        color: rgb(13, 255, 0);
+    }
+    75%{
+        color: rgb(17, 0, 255);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes friend {
+    0% {
+        margin-left: -650px;
+    }
+
+    100% {
+        margin-left: 200px;
+    }
+}
+@keyframes ship {
+    0% {
+        margin-left: 1600px;
+    }
+
+    100% {
+        margin-left: 670px;
+    }
+}
+@keyframes top_move{
+    0% {
+        margin-top: 2000px;
+    }
+
+    100% {
+        margin-top: 500px;
+    }
+}
+@keyframes rect{
+    25% {
+        transform: translateX(30px)
+    }
+
+    50% {
+        transform: translateY(15px)
+    }
+
+    75% {
+        transform: translateX(-30px)
+    }
+    100% {
+        transform: translateY(-15px)
+    }
+}
+
+
+.friendship:hover {
+    transform: translateX(40px) translateY(20px);
+    color: rgb(47, 255, 0);
+    font-size: 155px;
+}
