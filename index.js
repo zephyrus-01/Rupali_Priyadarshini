@@ -38,3 +38,6 @@ function animation(){
 function firstpage(){
   window.location = "second.html";
 }
+function secondpage(){
+  window.location = "third.html";
+}
